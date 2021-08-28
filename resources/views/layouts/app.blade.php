@@ -23,5 +23,6 @@
         @yield('body')
     </main>
 @yield('js')
+@yield('cart-js')
 </body>
 </html>

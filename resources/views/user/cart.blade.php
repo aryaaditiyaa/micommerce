@@ -5,10 +5,10 @@
         <div class="max-w-2xl mx-auto py-4 px-4 sm:px-6 lg:max-w-7xl lg:px-0">
             <h2 class="2xl:font-bold text-lg mb-8">Cart</h2>
 
-            <div class="grid grid-cols-2 space-x-32">
-                <div class="shadow-sm rounded bg-gray-50 p-6">
-                    <ul role="list" class="-my-6 divide-y divide-gray-200">
-                        <li class="py-8 flex">
+            <div class="grid lg:grid-cols-3 grid-cols-1 lg:space-x-8 lg:space-y-0 space-y-8">
+                <div class="col-span-2 shadow-sm rounded">
+                    <ul role="list" class="bg-gray-50 lg:p-4 p-2 divide-y divide-gray-200">
+                        <li class="py-4 flex">
                             <div class="flex-shrink-0 w-24 h-24 border border-gray-200 rounded-md overflow-hidden">
                                 <img
                                     src="https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg"
@@ -16,24 +16,24 @@
                                     class="w-full h-full object-center object-cover">
                             </div>
 
-                            <div class="ml-4 flex-1 flex flex-col">
+                            <div class="ml-4 lg:flex-1 flex flex-col">
                                 <div>
-                                    <div class="flex justify-between text-base font-medium text-gray-900">
+                                    <div class="lg:flex justify-between text-base font-medium text-gray-900">
                                         <h3>
                                             <a href="#">
-                                                Throwback Hip Bag
+                                                Throwback Hip Bagaaaaaaaaaaaa
                                             </a>
                                         </h3>
-                                        <p class="ml-4">
+                                        <p class="lg:mt-0 mt-1">
                                             $90.00
                                         </p>
                                     </div>
-                                    <p class="mt-1 text-sm text-gray-500">
+                                    <p class="lg:mt-1 mt-2 text-sm text-gray-500">
                                         Qty
                                     </p>
                                 </div>
-                                <div class="flex items-center justify-between text-sm">
-                                    <div class="custom-number-input w-1/4 mt-2">
+                                <div class="lg:flex items-center justify-between text-sm">
+                                    <div class="custom-number-input lg:w-1/4 w-1/2 mt-2">
                                         <div class="flex flex-row w-3/4 rounded-lg relative bg-transparent">
                                             <button data-action="decrement"
                                                     class=" bg-gray-100 text-gray-600 hover:text-gray-700 hover:bg-gray-400 w-20 rounded-l cursor-pointer outline-none">
@@ -48,7 +48,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div class="lg:mt-0 mt-2">
                                         <button type="button"
                                                 class="font-medium text-indigo-600 hover:text-indigo-500">Remove
                                         </button>
@@ -59,8 +59,41 @@
                     </ul>
                 </div>
 
-                <div class="">
-                    aaaaaaaaaaaaaaaaaa
+                <div class="col-span-1">
+                    <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+                        <div class="px-4 py-5 sm:px-6">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">
+                                Order Information
+                            </h3>
+                        </div>
+                        <div class="border-t border-gray-200">
+                            <div>
+                                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                                    <dt class="text-sm font-medium text-gray-500">
+                                        Total Items
+                                    </dt>
+                                    <dd class="mt-1 text-lg font-medium text-gray-900 sm:mt-0 sm:col-span-2">
+                                        5
+                                    </dd>
+                                </div>
+                                <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                                    <dt class="text-sm font-medium text-gray-500">
+                                        Total Price
+                                    </dt>
+                                    <dd class="mt-1 text-lg font-bold text-gray-900 sm:mt-0 sm:col-span-2">
+                                        Rp. 100.000
+                                    </dd>
+                                </div>
+                                <div class="bg-white px-4 py-5 sm:px-6">
+                                    <button type="submit"
+                                            class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                        Checkout
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -78,7 +111,7 @@
     </style>
 @endsection
 
-@section('js')
+@section('cart-js')
     <script>
         function decrement(e) {
             const btn = e.target.parentNode.parentElement.querySelector(

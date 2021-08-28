@@ -1,7 +1,7 @@
 ## About Micommerce
 
 Aplikasi mini-ecommerce yang dibangun menggunakan techstack sebagai berikut:
-- Tailwind CSS
+- Tailwind CSS (Fully Mobile Responsive)
 - Tailwind UI
 - Laravel 8
 - HeroIcons

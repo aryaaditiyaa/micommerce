@@ -15,6 +15,10 @@ class CreateTransactionDetailsTable extends Migration
     {
         Schema::create('transaction_details', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('transaction_id')->constrained();
+            $table->foreignId('product_id')->constrained();
+            $table->integer('qty');
+            $table->integer('total_price');
             $table->timestamps();
         });
     }

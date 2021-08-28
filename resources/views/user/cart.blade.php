@@ -101,13 +101,15 @@
                                     </dd>
                                 </div>
                                 <div class="bg-white px-4 py-5 sm:px-6">
-                                    <form action="" method="POST">
-                                        @csrf
-                                        <button type="submit"
-                                                class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                                            Checkout
-                                        </button>
-                                    </form>
+                                    @if($cart_item_total_price > 0)
+                                        <form action="{{ route('checkout') }}" method="POST">
+                                            @csrf
+                                            <button type="submit"
+                                                    class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                                Checkout
+                                            </button>
+                                        </form>
+                                    @endif
                                 </div>
                             </div>
                         </div>

@@ -44,7 +44,7 @@
                         <span class="">Products</span>
                     </div>
                 </a>
-                <a href=""
+                <a href={{ route('transaction.index') }}
                    class="block py-2.5 px-4 rounded transition duration-200 @if(Request::segment(2) == 'transaction') bg-green-700 @endif hover:bg-green-700 hover:text-white">
                     <div class="flex items-center space-x-2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"

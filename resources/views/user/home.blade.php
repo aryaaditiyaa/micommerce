@@ -39,6 +39,10 @@
                     </a>
                 @endforeach
             </div>
+
+            <div class="pt-4 lg:pt-8">
+                {{ $products->links() }}
+            </div>
         </div>
     </div>
 

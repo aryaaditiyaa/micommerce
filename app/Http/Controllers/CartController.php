@@ -10,7 +10,7 @@ class CartController extends Controller
 {
     public function index()
     {
-        $carts = Cart::where('user_id', auth()->user()->id)->with('product');
+        $carts = Cart::where('user_id', auth()->user()->id)->latest()->with('product');
         $carts_data = $carts->get();
         $cart_item_count = $carts->count();
         $cart_item_total_price = $carts->sum('total_price');
@@ -44,6 +44,27 @@ class CartController extends Controller
         );
 
         return redirect(route('cart.index'));
+    }
+
+    public function updateQuantity(Cart $cart, $counter)
+    {
+        switch ($counter) {
+            case 'decrease':
+                $new_qty = $cart->qty - 1;
+                break;
+            case 'increase':
+                $new_qty = $cart->qty + 1;
+                break;
+        }
+
+        if ($new_qty > 0){
+            $cart->update([
+                'qty' => $new_qty,
+                'total_price' => Product::whereId($cart->product_id)->value('price') * $new_qty
+            ]);
+        }
+
+        return redirect()->back();
     }
 
     public function destroy(Cart $cart)

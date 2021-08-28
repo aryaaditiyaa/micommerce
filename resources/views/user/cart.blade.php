@@ -34,19 +34,29 @@
                                         </p>
                                     </div>
                                     <div class="lg:flex items-center justify-between text-sm">
-                                        <div class="custom-number-input lg:w-1/4 w-1/2 mt-2">
-                                            <div class="flex flex-row w-3/4 rounded-lg relative bg-transparent">
-                                                <button data-action="decrement"
-                                                        class=" bg-gray-100 text-gray-600 hover:text-gray-700 hover:bg-gray-400 w-20 rounded-l cursor-pointer outline-none">
-                                                    <span class="m-auto text-xl font-thin">−</span>
-                                                </button>
+                                        <div class="custom-number-input mt-2">
+                                            <div class="flex flex-row rounded-lg relative bg-transparent">
+                                                <form action="{{ route('updateQuantity', [$cart->id, 'decrease']) }}"
+                                                      method="POST">
+                                                    @csrf
+                                                    @method('PATCH')
+                                                    <button data-action="decrement"
+                                                            class=" bg-gray-100 text-gray-600 hover:text-gray-700 hover:bg-gray-400 w-8 h-full rounded-l cursor-pointer outline-none">
+                                                        <span class="m-auto text-xl font-thin">−</span>
+                                                    </button>
+                                                </form>
                                                 <input type="number" id="input_qty"
-                                                       class="border border-gray-100 outline-none focus:outline-none text-center w-full bg-gray-100 font-semibold text-sm hover:text-black focus:text-black md:text-basecursor-default flex items-center text-gray-700 outline-none"
+                                                       class="border border-gray-100 outline-none focus:outline-none text-center w-1/6 bg-gray-100 font-semibold text-sm hover:text-black focus:text-black md:text-basecursor-default flex items-center text-gray-700 outline-none"
                                                        name="custom-input-number" value="{{ $cart->qty }}" min="1"/>
-                                                <button data-action="increment"
-                                                        class="bg-gray-100 text-gray-600 hover:text-gray-700 hover:bg-gray-400 w-20 rounded-r cursor-pointer">
-                                                    <span class="m-auto text-xl font-thin">+</span>
-                                                </button>
+                                                <form action="{{ route('updateQuantity', [$cart->id, 'increase']) }}"
+                                                      method="POST">
+                                                    @csrf
+                                                    @method('PATCH')
+                                                    <button data-action="increment"
+                                                            class="bg-gray-100 text-gray-600 hover:text-gray-700 hover:bg-gray-400 w-8 h-full rounded-r cursor-pointer">
+                                                        <span class="m-auto text-xl font-thin">+</span>
+                                                    </button>
+                                                </form>
                                             </div>
                                         </div>
                                         <div class="lg:mt-0 mt-2">
@@ -76,7 +86,7 @@
                             <div>
                                 <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                                     <dt class="text-sm font-medium text-gray-500">
-                                        Total Items
+                                        Total Item Types
                                     </dt>
                                     <dd class="mt-1 text-lg font-medium text-gray-900 sm:mt-0 sm:col-span-2">
                                         {{ $cart_item_count }}
@@ -87,14 +97,17 @@
                                         Total Price
                                     </dt>
                                     <dd class="mt-1 text-lg font-bold text-gray-900 sm:mt-0 sm:col-span-2">
-                                        {{ $cart_item_total_price }}
+                                        {{ "Rp " . number_format($cart_item_total_price, 0 , '.' , ',') }}
                                     </dd>
                                 </div>
                                 <div class="bg-white px-4 py-5 sm:px-6">
-                                    <button type="submit"
-                                            class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                                        Checkout
-                                    </button>
+                                    <form action="" method="POST">
+                                        @csrf
+                                        <button type="submit"
+                                                class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                            Checkout
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -115,46 +128,4 @@
             margin: 0;
         }
     </style>
-@endsection
-
-@section('cart-js')
-    <script>
-        document.getElementById('input_qty').readOnly = true;
-
-        function decrement(e) {
-            const btn = e.target.parentNode.parentElement.querySelector(
-                'button[data-action="decrement"]'
-            );
-            const target = btn.nextElementSibling;
-            let value = Number(target.value);
-            value--;
-            target.value = value;
-        }
-
-        function increment(e) {
-            const btn = e.target.parentNode.parentElement.querySelector(
-                'button[data-action="decrement"]'
-            );
-            const target = btn.nextElementSibling;
-            let value = Number(target.value);
-            value++;
-            target.value = value;
-        }
-
-        const decrementButtons = document.querySelectorAll(
-            `button[data-action="decrement"]`
-        );
-
-        const incrementButtons = document.querySelectorAll(
-            `button[data-action="increment"]`
-        );
-
-        decrementButtons.forEach(btn => {
-            btn.addEventListener("click", decrement);
-        });
-
-        incrementButtons.forEach(btn => {
-            btn.addEventListener("click", increment);
-        });
-    </script>
 @endsection

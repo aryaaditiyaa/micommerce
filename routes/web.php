@@ -29,7 +29,8 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout')->middle
 
 Route::group(['middleware' => ['auth', 'is_user']], function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
-    Route::resource('/cart', CartController::class);
+    Route::resource('/cart', CartController::class)->only('index', 'store', 'destroy');
+    Route::patch('/cart/{cart}/{action}', [CartController::class, 'updateQuantity'])->name('updateQuantity');
 });
 
 Route::group(['middleware' => ['auth', 'is_admin']], function () {

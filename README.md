@@ -1,64 +1,31 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+## About Micommerce
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Aplikasi mini-ecommerce yang dibangun menggunakan techstack sebagai berikut:
+- Tailwind CSS
+- Tailwind UI
+- Laravel 8
+- HeroIcons
+- MySQL
+- maatwebsite/excel
 
-## About Laravel
+## Screenshots
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+![alt text](https://lh3.googleusercontent.com/pFdkZH-5pttggzA089Wg1gnlr_tMGNo2YCwSjOFG_zlQRBZAj41H3BeJSGfaF8WpBhcYItBDLy7Ho-g2JYPDXNBYozf3fyM9OWaoWd-YWswhk_pfIaSEuetqMjDhp6MU_uN_hCOTAGX0IXkH9pxvLme1S2mnFiMcZ4lEYkzvehbN0HPFvO9K2g3Sv3M7tPtRXAx7uhp-3AcT9TOG_cFIBKPQ2cZ6-i2wInSGTQfwipERpQ3hCt0U6QyqOW_eAJtlstECi_7cut7xARh96lh1cvaPa8eh6i4dmSwJOPMSUqDj8glSAr245MVrel8wVrauSvhs-9hz_bNBVTVRXzxO3tQ3YVvSB8Gpqx6-5j3KKUahSWums7IJSa2gadQZ_KxUOen59bD3XSBsvCskSXIRcuFWsmQ4Z5bsnTHQUnknWBIFSPLtF7U6oAqMoRw6yVcWs1MaTnHwIQOZqtiuWSdqzButbp0oU70wej1o-UmGilFfJlQJbKsifSYVo8_-7cxDbWzhwc1UC7Jeh6ZNzS5Q78JQZrrEbHRCUGFr8tzBnDkby-lA_YToF2jyNUKbZrpvvxKPSKFfA64eGDmDcbZBYWOy_b6DCC_2PUD-PWSfla1NHP_UNl-e5vUbpgqMgO9KIDn9WGslknAHbt35ir7s5jEik_3a-3gbxvS2uHfn_4-pJRpmDhvZqPDnggMsFYIkMtLzAwoISGMMt0ocl0ufPEcP=w1470-h828-no?authuser=0)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+![alt text](https://lh3.googleusercontent.com/a0VObzUZitPzu76DB4hdPsz3I6RPXFCFhNBMLISDYFLRCYnr2aCxLiVgBjHphdxMbs4j0wsAlYrsnxWa0QTvJbLp4K5IGPUyX-rPhZ9OLmgk8MowpujHeMY-pim049fwEt5CI-ceu7BH5BDEMn_T_rPu5vmXBFYH9ObHnzhi3t0uGb-VDD1kZEVZgc8KlmdAEoliW0HO1l3FQy6zAvx2xdKLoBGd71qJiGw2JfiO-r-gP8DnIOBmYPvOGZ0juBHFVqjXDl_G9CPhLPtQxHekh481li5RPKO9mGhgfqY3ODNzwFttY68nfHDHQAyn5svVqrDXygYw38juE5BQf9Pkc1VDOEBB28OccOhu0bj3B30VTzptky7nTdsFKeETQnITATYiq5fE86Dfh-9VzLXe4_Ha6wZnWZd-m0FbuGd1IONGJz3xdYvXQlVL3LjY7CvJ0VATmcBN3zzACMsEWzgYt6D_pZNURhppsCusMygEXGXBxqd9NT_9de-Of1Tftr54GmK5vBWn3n5TwN_kMj1OCcDVBevODGpMBSdlPaFc53_JOfo0FoPsoJ6wmV9zFDAHng-4qK-_saFN6u0Gy37uqyMCKmk8vkTgqmG1McKXNH0f40PkrkU4pwDdRNeLi6bBsPqZ2FLa0H6jobcSawEyMnM1ahtTGyTVdEWasojZN03XqDTPRMfLBFXF8d7jw0sgyXTI2qvMf2ryHU-I3_4hM8LA=w1470-h828-no?authuser=0)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![alt text](https://lh3.googleusercontent.com/vjCrgum66mWwHCVTl1hPX5bDCt5Topg3JT5oucH3itXf6mQCgzo41AJFXtYd1dX2-lExPkc6s_mBOt62TwAtpJq9dC9LnmG1cfPTvXFMw-vowBVt_YzHZwYrJb8TYopdV6ijD3XeblQchwcbPjrA87MBh5M4yx7duHnc9EZmogQWUcZWkjI2jQYx7irVE1oFaXXdGhZAugNJs0EPxS--V4lTsJYYQCj1S4BFT286gCHOd9N3WMQLLdsE3-i_iDemuPr3qp8zPR1T67mxnVZzl4eYdb84GGZe5dM5kwhJfg13WUmJ64C9eyQPyW3asS3DDGHVk1ZkoH-n-CF-gnrRcRXozzd-wJELvIArLKJw4eXhE7z5nIQVhKT2Uu7z8Zdu4Vk8k9xPrwaX8w0sb33C7eG87Wpjn30TAl-Lu62AQ3C0W9AL2oSxaAe6cvrV98JI6zBlYmOlkSfQTsr6JI0MjREKQJjjPrt0ZN1JGe0-U58a1VH1r5QneWqKthz5gPCaQr-xYV11t6BpAbWnIJL4YHk9BSj23n5zA4ISkRYjxz-pGHauJ9F0YZztEHLePAbZrUtR1quQnSGayBZ0OgNWIwWCp9eq4_y-BiECTe_VXp1Ifd599A3xpFqqFs_tvDWx4hQFQqVaoH20z7T-6D2D-kuWNaXqWs0ExLHmZGjxLfOLu5WuV0Py0i1jo_xSiocZSOJ2Z0ttAXS5G1FncQiTN5Bx=w1470-h828-no?authuser=0)
 
-## Learning Laravel
+![alt text](https://lh3.googleusercontent.com/Dm1JJLjG8cjmkndnJ2u0rEPe_GFvxU-ttKO9ab4jTJ-aocdLsC_v6ck4MYF8wX2lGgRz74wgobdUVFnPQPDJMM7-qMWlwVgF4BdfKdS-_DlNdRoZlIWTfuTsX-Vuwy8jD3XnzdHZwzAgvSHkZk7ezloa2BlbjbFuqMvl7LcvaKebvXrMleMutL8PgBSYdJ0uxgflzL6U4NiUBB6dyDVPju_a4KidTwr2ITGw_GqU_uwhFzNu2471f8B61gwRbLPz-H3VoNrSiKNV4qhizsJJb1JOsX1Pcnza31n1r03ZAy0dOGmuMsDx4F-KEyacraougpSEyZEfWrTdDY_5c752IZW72TXIKU4pGuNSWbkhWzpYyQ3PXlIg4KMz2A2ijOp6AcHj3ISYDmh8eHDb1N6zy-YZHyP4zLtWtH95NE3L2mmOxwafu6RRRY5nd628TrzHK-YE7o266bRsnP3zf7Mbq7DOP8l7RCUnvhO3FSH-g4Kw6msCR5OFuDw0mIhmWGwl6gQ6IGTJHpVNY72Sn5VbrSypJv_rSS09Tu63ls47T11bHttpikMn2R8zcnFUAkbxukYYYWDqvu2zmB9i3RAxbT8ayJ-VtuWXHEp45wovKPppU0WInrdWjIXhgiHmid9MnTdlUsPtY5up19Eoe131iL9jC1MsvqsJTbtCV3avLfpT7DRNrIbB-eri-AOFkL1G51wGsM0g6ky3kxK52Qh7iun0=w1470-h828-no?authuser=0)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+![alt text](https://lh3.googleusercontent.com/Aj7PwvYlVInc0YG8EZOoQueDQD_r5Y2jvadlJBCDdjLqx7wfw0WRb64gz_K_H1iGDdIU_3i-Snwmg3vXjpz2U9p39f2J0W9oEFzA7tfTFeQTFZZzEyI7W94ONli64yw13ETt79aKEfVV1W_dgzLcttA-8wxuwrJKnxlfI9iKwtE85jHdOYqrsW2Gb2cWTGDd2yEsdL8rQgyNK6fBHQmwSYmUW4yDd9gfEtOd_VXw44jSgZN8SC-NbCyBiZqor_wSMypMwLicBAgjv6RViGbUlczP3egcoeGOWi8Ip_lD-rqxKQ_ADT3L4G0IGkAwYeUuN_6zVjcwSBYPZsa3C0fDtsnkN00mzfbpLj2hxs57SAycw63k1_ky_q3zR38AIycvt40RAUuuqJGpsxre-XhYtet0ZcFb7uMHZCjBeGHmUt3eMTiA817VqjfqXhAmtCOhl9oTvy5ouvEFrMNLp5ir7hr6Jp4g5t7Z-JNI0QuoeXLQnkWl6Um8Dos5WfRYu8V5uXwv7Pgx_GF3PUFDQnUthQRhlY9qR-PSBLHNFpwIjVl95qNh8YcKOxSypziCAcij85xaBbevDaA3XdfIfVQylJvwnkinakjRZW2GvUSv_UNFa6YqDfb9ffnKIFVDrU-dt72a68l4WuI7o5behQMhdoTcKKUKoZWRdLZscioxXVFS60Qxrj3Boz_PHrPlhMCZ5BZn3r8L_COA6nMRRjJ47bGE=w1470-h828-no?authuser=0)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+![alt text](https://lh3.googleusercontent.com/Ts2EiqR7WRRDTsIqgioLVAGXrJAXJZEar26jwn51glqkig2XSUhkb-qoftLdItYwHnk3E0s1mSV-nMfaMpvJLHQstwyte8NPUK9f88PuzTV2LUTr2nWGf4Dg9H7TIDn6t30jNZRCLkMRvQ_9XqeXs7sxR5mtKZncrgonVQbAB4wSQn6iYjqDBXbNfGdMCo37ZaU91dC8VDRT-F_NPk3x8sFQMOsw3DeLHq3tgDa2IhpH4Cbvqb4-s8lthR1PJ0jn28zyLzEuZ21GFlosORfmMlNMrcoKb3tUXM51H24Rp93f0hWAnYq-qCSRceFKIbdEfbtX5TDGdbtiO5neixBD-e-coHkWmBMrSSoybJ-1-5F0OE4j9VoUubohzVYfYAosvC9DsGIP45cs9jM1Z5WRrNVFqepKrw2RM8Y82rPk7dDHKRUI4tyGd2nQnO3BEJEguJjDWQxj4Q8oCCI_mFNjbEcfryczpBigxBmIu8nvzL7joYuudWx0mHsOebVbCNFXrt81giKPSsls04GcwO32fGKF1viuFFqaKLlwdPgzfmjAAya-0CsOul4kuoLW3UvFnUIvFglD2cqE8qz_a9eaDwDgbJdquxbrgq73746JGhFQMO7bdhG0wMX3pb0ZwVU3R5HY9sIv-Zs3ZdhE8Qo1O1dgyEUkL-UNIwxOJSnzzTZMtCnl-Pn5thcWPivyVumihuRZYTAFnWBjQum_GSJOM_ca=w1470-h828-no?authuser=0)
 
-## Laravel Sponsors
+![alt text](https://lh3.googleusercontent.com/sxDBHiOcukyBVVBy8bzGyg4L9huX6Dtgwi3PfDnIbPEvOg0HYwwMyW1op640sX10tXnvKTToAlT1nF37OF0s95-G6x43ubTXsHzqKV4hY5qrdHl0DP3RiBiorFbswQT7HGQ_HMg4NNzNOo77JRfQLgnuvLscxR41g3xl758rz_uwsHUHtHC_Mp0Bt6pkAxsaUKrVHM5A3UqY2AkFel_Va-YsPNoqeV0H9vOb-JTopudX7tB6fKBWg6iMTviuDbe0gloz41ZPPSJknyqk3yMBlrfpXIVWJ4MDYyeQZDPxETvKCkM-Cd-2g_TpdDzwiG6RdYhRKC6QBwns1gZJk9fuhEvBjaZaeKwb90clx3wgXTd9nKb4A2sjd6YsNVtu8eZ5-eKYk9VbOSlsiv2mgQC2_ledJrvv4gJ9gMS3eO14jpu4wSq4vP-ln5omVpBXOMEp840Aqhicyq-XI1OQx-KrgdnbM428mfLc14fRK10-zhEYIxyTrBL-NZRR4brT1cyTXICLt5sNeV3VabJoqr5URPPPVuRJ7ghaR--PMZJ6AudLt6fm59sygGfDlalLP-ayUY1PamtzmjIXqmifH3cUKNRPxr-L7CIDoKPxex3yKrEDxpR1rAeo7JHl21bdBcFSPBJCfkKDlNEkHBnoXz3BRj7M0WyOLbCZB9JrLKrzbIZeQKOhYoEamf73wD6mwCGJKgwU9RPXmL1wDPfuzaDFfCrD=w1470-h828-no?authuser=0)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+![alt text](https://lh3.googleusercontent.com/YX60Kxzdibho_PD0JW30uh20tpEubYscMhhg74-BS6ysUtLC1W6L7jdcXmVlMnHIWBy3lWwOWe85s1YUFuElgNfVC1LjPvE5NAX_JEbZlBGyUzCN8rVgVUdwXJFYDv0FxOHPcDWbFB-OV-IaoFPAlCL-PNmvklXRQ7vSsrOoXJplevpBaRdg3I9oT1HslSAfj7Djb-jfiNmY0rULcX8K9Dgij-jZTXJ84DJPWL2Vyz9YRh8a54HvzccJeXsiZjtrP7Le0qwMXwbZxW1OHzKY81mBQk3HPd20qKEwOh25nx6ES1Ab2GA5j54lQ6MxFer_y0X-hErH6y9fMhq9xNunPm14mPVuDCbswr4bEqIGeJyxNm1veQZXItZBlgpr270-tCp8Q8lvQvxipvWUYUGn-HZBU8lKVf48C9g7uCQKiBriAYV8ngkydn5ZCFb1MoKu3KS1sSuYvsQ4Ztmuotao4bUnbo903vYFmVTshoQzsDx9XA2xvPzFbYftUfqCfeU3XxQQFVSr8DFIYkWLP4gcxZjN6ilbL_Gz5uvvPow39jykhniJn45p_heGS5RNrHt_HUUUJenhWtrjjqjbm45LLvFF0YnXiYVxXTrU3y6dThsjrVJsqAdAJ18wlgdTPimKdD9HNJ09oq1sUxBxm3tNCaqGuyalnhTBIZQX8-A00ndwpvQLOfetCOqUM4L5l5EtOwzNqpcIixzU_GgvqQUuJA6z=w1470-h828-no?authuser=0)
 
-### Premium Partners
+![alt text](https://lh3.googleusercontent.com/akYOJpCBxAuhdjOmBgQvx0GOIvAM1-whvScTjPNicPF7kmn0AQp5qLJxo98iUHJchwzGX73bDKmBE1Qx2mCcCelxWmXy2AG02u9qNbYEYNoxwulHveFbntDE8oAi-Xu7GYIlxaSVJqINA5rJIxKbsgH8nOs5HXU2N-2_qNPfzYV6yeLyRExd2bG8xH_ShcwLqu7FzX-Px04oBtaTIS8w0OZtfATTh9CJ9lA3Qowe80aE6W7XxHI9fjWzYqkaXp93zBPwU3cj-igdM3xZwig5yTmX-3W__vLoP4KfGpGOtw9P7iu4BFcDnS6DOqhqLaiGL71ropacUsfQmD3d6kePdcpEo1ia6npMj7hl3Thm0JgxN1OnxKaExDEPtNMAIfFVrRF8Cm41BMMsLb_2YrKam8n8C5HAk7RfCjp5-IWn5IxPFD_UPEveUUD5Znc8911PDDtUUSrrlBMCKyVbfv4wl8Usy00pRpkqikyUpP0rOtyXgvQgN7tvl4gG8_03fcuR8CZJlFLHvDvRfb5fM_KvLifLn_DwMM6tMi3iePEFef0l94UbnGKxed1bt7OjaqlGsoDla72yxi6NywjrZWcaZVV0ho0DZixpFRn8yjQQZQY2Q-_uoJTddb4WODpYVIFtCWV13-Ygs70j7UG1zGMqbaNopG4ei1xQVVyRip7Pd_c_i2KvxyPR3H5FBM0k6EkejVQm4DUior8vvAbaKHPjG1Rs=w1470-h828-no?authuser=0)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+![alt text](https://lh3.googleusercontent.com/8bEimsZDpKXK7lg4dzqsKR2dw8UhNflR2YgNE-FCWgrVRs_NqEmdgiurSPraUKQl8aZCMHM380wZ_CRCHVuObvg8NSdRkrHn-8P4RLDGkCyTQCuW6HeBlCkHJyryfQ7T01USHIn7ibfCrDkz8QqJxLLtogUeo9tnhX_N1jL3Nvpw9NujvUHeFEGm-ojiuyIxjhqngALOZO5ohMLmXkaVT4RSOg4jFcMkc4Lq6P5F6MC641Y5wKmysBa6cSG0iEzwBWCLn2_uUaGwXSk0vhujwrG3DbKeBPeSspSrXrG61uNrxitaxKSL7HYVYc-VCwIYwv_5FovEeCQZHUjObfhMTIRiEIdbJzIG4ay-fsoWgiwjRy2e0an94P2iZGqA3pjcQg_frCQD23T9IdRIRcB4sZ17eoF03PUNT49p-NmVhNTGEKymgayv3mUXWyThNc07P6H4HxX2s8_nSp5sQGPDAKIZ8S98TSQx7N3tYxLeP-e--sRX78xL0iPrNC3E3p7YJFJLVMl_c0vDRsGC5PSsIkFwkSdEYih5ItUeFk0w6LnnMwMbGHXmvOAQvD9ej0N1cRt0QyZE_DuECFudZQKtkhlAHeiC3owZwW0rMCi6YFKsoRpfF_ApDZHNTG8faP5Q3Vye7Eu8dmXk3-RxbQtTM59_NcKOmpDMiKOk1XRAPatdsyXuQR1CICVjKWvGUeb_dBio6lReKJJGkZxVm8F-DMpo=w1470-h828-no?authuser=0)

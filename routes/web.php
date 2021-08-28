@@ -39,6 +39,8 @@ Route::group(['middleware' => ['auth', 'is_user']], function () {
 Route::group(['middleware' => ['auth', 'is_admin']], function () {
     Route::resource('/admin/product', ProductController::class);
     Route::resource('/admin/transaction', TransactionController::class)->only('index', 'show');
+
+    Route::get('/admin/transaction-export', [TransactionController::class, 'export'])->name('transaction.export');
 });
 
 

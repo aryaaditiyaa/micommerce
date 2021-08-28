@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\TransactionExport;
 use App\Models\Cart;
 use App\Models\Transaction;
 use App\Models\TransactionDetail;
 use Illuminate\Support\Facades\DB;
+use Maatwebsite\Excel\Facades\Excel;
 
 class TransactionController extends Controller
 {
@@ -49,5 +51,10 @@ class TransactionController extends Controller
         return redirect(route('home'))->with([
             'message' => "Transaction successful"
         ]);
+    }
+
+    public function export()
+    {
+        return Excel::download(new TransactionExport, 'transactions.xlsx');
     }
 }

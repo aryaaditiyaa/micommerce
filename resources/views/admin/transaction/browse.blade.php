@@ -7,7 +7,7 @@
                 <h1 class="lg:text-3xl text-lg font-bold text-gray-900">
                     Transaction
                 </h1>
-                <a href=""
+                <a href="{{ route('transaction.export') }}"
                    class="justify-self-end bg-green-600 hover:bg-green-500 lg:p-3 p-1 text-white rounded inline-flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                          stroke="currentColor">

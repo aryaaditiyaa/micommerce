@@ -58,6 +58,8 @@ class ProductController extends Controller
         ]);
 
         if ($request->file('image')) {
+            Storage::disk('public')->delete($product->image);
+
             $image = Storage::putFile(
                 'public/products/' . date('FY'),
                 $request->file('image')

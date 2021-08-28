@@ -7,55 +7,61 @@
 
             <div class="grid lg:grid-cols-3 grid-cols-1 lg:space-x-8 lg:space-y-0 space-y-8">
                 <div class="col-span-2 shadow-sm rounded">
-                    <ul role="list" class="bg-gray-50 lg:p-4 p-2 divide-y divide-gray-200">
-                        <li class="py-4 flex">
-                            <div class="flex-shrink-0 w-24 h-24 border border-gray-200 rounded-md overflow-hidden">
-                                <img
-                                    src="https://tailwindui.com/img/ecommerce-images/shopping-cart-page-04-product-01.jpg"
-                                    alt="Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt."
-                                    class="w-full h-full object-center object-cover">
-                            </div>
+                    <ul role="list" class="bg-gray-50 lg:p-2 divide-y divide-gray-200">
+                        @foreach($carts_data as $cart)
+                            <li class="p-4 flex">
+                                <div class="flex-shrink-0 w-24 h-24 border border-gray-200 rounded-md overflow-hidden">
+                                    <img
+                                        src="{{ asset('storage/'. $cart->product->image) }}"
+                                        alt="Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt."
+                                        class="w-full h-full object-center object-cover">
+                                </div>
 
-                            <div class="ml-4 lg:flex-1 flex flex-col">
-                                <div>
-                                    <div class="lg:flex justify-between text-base font-medium text-gray-900">
-                                        <h3>
-                                            <a href="#">
-                                                Throwback Hip Bagaaaaaaaaaaaa
-                                            </a>
-                                        </h3>
-                                        <p class="lg:mt-0 mt-1">
-                                            $90.00
+                                <div class="ml-4 lg:flex-1 flex flex-col">
+                                    <div>
+                                        <div class="lg:flex justify-between text-base font-medium text-gray-900">
+                                            <h3>
+                                                <a href="#">
+                                                    {{ $cart->product->name }}
+                                                </a>
+                                            </h3>
+                                            <p class="lg:mt-0 mt-1">
+                                                {{ "Rp " . number_format($cart->total_price, 0 , '.' , ',') }}
+                                            </p>
+                                        </div>
+                                        <p class="lg:mt-1 mt-2 text-sm text-gray-500">
+                                            Qty
                                         </p>
                                     </div>
-                                    <p class="lg:mt-1 mt-2 text-sm text-gray-500">
-                                        Qty
-                                    </p>
-                                </div>
-                                <div class="lg:flex items-center justify-between text-sm">
-                                    <div class="custom-number-input lg:w-1/4 w-1/2 mt-2">
-                                        <div class="flex flex-row w-3/4 rounded-lg relative bg-transparent">
-                                            <button data-action="decrement"
-                                                    class=" bg-gray-100 text-gray-600 hover:text-gray-700 hover:bg-gray-400 w-20 rounded-l cursor-pointer outline-none">
-                                                <span class="m-auto text-xl font-thin">−</span>
-                                            </button>
-                                            <input type="number"
-                                                   class="border border-gray-100 outline-none focus:outline-none text-center w-full bg-gray-100 font-semibold text-sm hover:text-black focus:text-black md:text-basecursor-default flex items-center text-gray-700 outline-none"
-                                                   name="custom-input-number" value="1" min="1"/>
-                                            <button data-action="increment"
-                                                    class="bg-gray-100 text-gray-600 hover:text-gray-700 hover:bg-gray-400 w-20 rounded-r cursor-pointer">
-                                                <span class="m-auto text-xl font-thin">+</span>
-                                            </button>
+                                    <div class="lg:flex items-center justify-between text-sm">
+                                        <div class="custom-number-input lg:w-1/4 w-1/2 mt-2">
+                                            <div class="flex flex-row w-3/4 rounded-lg relative bg-transparent">
+                                                <button data-action="decrement"
+                                                        class=" bg-gray-100 text-gray-600 hover:text-gray-700 hover:bg-gray-400 w-20 rounded-l cursor-pointer outline-none">
+                                                    <span class="m-auto text-xl font-thin">−</span>
+                                                </button>
+                                                <input type="number" id="input_qty"
+                                                       class="border border-gray-100 outline-none focus:outline-none text-center w-full bg-gray-100 font-semibold text-sm hover:text-black focus:text-black md:text-basecursor-default flex items-center text-gray-700 outline-none"
+                                                       name="custom-input-number" value="{{ $cart->qty }}" min="1"/>
+                                                <button data-action="increment"
+                                                        class="bg-gray-100 text-gray-600 hover:text-gray-700 hover:bg-gray-400 w-20 rounded-r cursor-pointer">
+                                                    <span class="m-auto text-xl font-thin">+</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="lg:mt-0 mt-2">
+                                            <form action="{{ route('cart.destroy', $cart->id) }}" method="POST">
+                                                @csrf
+                                                @method(('DELETE'))
+                                                <button type="submit"
+                                                        class="font-medium text-indigo-600 hover:text-indigo-500">Remove
+                                                </button>
+                                            </form>
                                         </div>
                                     </div>
-                                    <div class="lg:mt-0 mt-2">
-                                        <button type="button"
-                                                class="font-medium text-indigo-600 hover:text-indigo-500">Remove
-                                        </button>
-                                    </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
+                        @endforeach
                     </ul>
                 </div>
 
@@ -73,7 +79,7 @@
                                         Total Items
                                     </dt>
                                     <dd class="mt-1 text-lg font-medium text-gray-900 sm:mt-0 sm:col-span-2">
-                                        5
+                                        {{ $cart_item_count }}
                                     </dd>
                                 </div>
                                 <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -81,7 +87,7 @@
                                         Total Price
                                     </dt>
                                     <dd class="mt-1 text-lg font-bold text-gray-900 sm:mt-0 sm:col-span-2">
-                                        Rp. 100.000
+                                        {{ $cart_item_total_price }}
                                     </dd>
                                 </div>
                                 <div class="bg-white px-4 py-5 sm:px-6">
@@ -113,6 +119,8 @@
 
 @section('cart-js')
     <script>
+        document.getElementById('input_qty').readOnly = true;
+
         function decrement(e) {
             const btn = e.target.parentNode.parentElement.querySelector(
                 'button[data-action="decrement"]'

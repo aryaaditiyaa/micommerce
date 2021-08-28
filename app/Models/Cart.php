@@ -13,5 +13,20 @@ class Cart extends Model
         'user_id',
         'product_id',
         'qty',
+        'total_price',
     ];
+
+    protected $appends = [
+        'items_count'
+    ];
+
+    public function getItemsCountAttribute()
+    {
+        return Cart::where('user_id', auth()->id)->count();
+    }
+
+    public function product()
+    {
+        return $this->belongsTo(Product::class);
+    }
 }

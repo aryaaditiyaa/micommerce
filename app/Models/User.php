@@ -42,8 +42,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function role()
+    public function cart()
     {
-        return $this->hasOne(Role::class);
+        return $this->hasMany(Cart::class);
     }
 }

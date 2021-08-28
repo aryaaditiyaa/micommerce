@@ -27,8 +27,8 @@ class AuthController extends Controller
             ]);
         }
 
-        if (Auth::user()->role == 'ADMIN'){
-            return redirect(route('dashboard'));
+        if (Auth::user()->role == 'ADMIN') {
+            return redirect(route('product.index'));
         }
 
         return redirect(route('home'));

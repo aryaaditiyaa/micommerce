@@ -19,7 +19,7 @@ class IsUser
     {
         if (Auth::user()->role != 'USER') {
             if (Auth::user()->role == 'ADMIN') {
-                return redirect(route('dashboard'));
+                return redirect(route('product.index'));
             }
         }
         return $next($request);

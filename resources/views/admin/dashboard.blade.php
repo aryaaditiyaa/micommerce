@@ -1,5 +1,5 @@
-@extends('layouts.app')
+@extends('partials.navbar-admin')
 
 @section('content')
-admin
+    admin
 @endsection

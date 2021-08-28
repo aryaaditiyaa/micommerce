@@ -1,8 +1,10 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,10 +29,11 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout')->middle
 
 Route::group(['middleware' => ['auth', 'is_user']], function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::resource('/cart', CartController::class);
 });
 
 Route::group(['middleware' => ['auth', 'is_admin']], function () {
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::resource('/admin/product', ProductController::class);
 });
 
 

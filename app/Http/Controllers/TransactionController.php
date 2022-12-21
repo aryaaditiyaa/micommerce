@@ -20,7 +20,7 @@ class TransactionController extends Controller
     public function showCurrentUserTransactionHistories()
     {
         $transactions = Transaction::query()
-            ->where('id', auth()->user()->id)
+            ->where('user_id', auth()->user()->id)
             ->paginate(10);
 
         return view('user.transaction-history', compact('transactions'));

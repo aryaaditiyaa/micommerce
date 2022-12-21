@@ -22,7 +22,7 @@
                 @foreach($products as $product)
                     <a href="#" class="group border border-gray-100 rounded shadow p-4">
                         <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                            <img src="{{ asset('storage/'. $product->image) }}" class="w-full h-64 object-center object-cover group-hover:opacity-75">
+                            <img src="{{ asset('storage/'. $product->image) }}" class="w-full h-64 object-center object-cover group-hover:opacity-75" alt="">
                         </div>
                         <div class="flex items-center justify-between mt-4">
                             <div class="self-center">

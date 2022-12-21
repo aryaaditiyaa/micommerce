@@ -46,6 +46,8 @@
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="{{ route('home') }}" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
                    aria-current="page">Home</a>
+                <a href="{{ route('my-transaction') }}" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                   aria-current="page">Transaction History</a>
                 <a href="{{ route('logout') }}" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
                    aria-current="page">Logout</a>
             </div>

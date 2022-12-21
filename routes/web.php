@@ -32,8 +32,8 @@ Route::group(['middleware' => ['auth', 'is_user']], function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
     Route::resource('/cart', CartController::class)->only('index', 'store', 'destroy');
     Route::patch('/cart/{cart}/{action}', [CartController::class, 'updateQuantity'])->name('updateQuantity');
-
     Route::post('checkout', [TransactionController::class, 'checkout'])->name('checkout');
+    Route::get('my-transaction', [TransactionController::class, 'showCurrentUserTransactionHistories'])->name('my-transaction');
 });
 
 Route::group(['middleware' => ['auth', 'is_admin']], function () {

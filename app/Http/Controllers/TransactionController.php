@@ -17,6 +17,11 @@ class TransactionController extends Controller
         return view('admin.transaction.browse', compact('transactions'));
     }
 
+    public function showCurrentUserTransactionHistories()
+    {
+        return view('user.transaction-history');
+    }
+
     public function show(Transaction $transaction)
     {
         return view('admin.transaction.show', compact('transaction'));

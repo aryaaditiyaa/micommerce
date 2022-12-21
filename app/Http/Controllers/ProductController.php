@@ -25,7 +25,7 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'price' => 'required|numeric',
-            'image' => 'required|image|max:1024',
+            'image' => 'required|image|max:10240',
         ]);
 
         if ($request->file('image')) {
@@ -54,7 +54,7 @@ class ProductController extends Controller
         $request->validate([
             'name' => 'sometimes|string|max:255',
             'price' => 'sometimes|numeric',
-            'image' => 'sometimes|image|max:1024',
+            'image' => 'sometimes|image|max:10240',
         ]);
 
         if ($request->file('image')) {

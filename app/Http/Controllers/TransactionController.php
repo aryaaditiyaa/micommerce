@@ -13,7 +13,7 @@ class TransactionController extends Controller
 {
     public function index()
     {
-        $transactions = Transaction::latest()->paginate(5);
+        $transactions = Transaction::latest()->paginate(3);
         return view('admin.transaction.browse', compact('transactions'));
     }
 
@@ -21,6 +21,7 @@ class TransactionController extends Controller
     {
         $transactions = Transaction::query()
             ->where('user_id', auth()->user()->id)
+            ->latest()
             ->paginate(10);
 
         return view('user.transaction-history', compact('transactions'));

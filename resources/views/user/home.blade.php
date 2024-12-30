@@ -1,7 +1,7 @@
 @extends('partials.navbar')
 
 @section('content')
-    <div class="bg-wnahite">
+    <div class="bg-white">
         <div class="max-w-2xl mx-auto py-4 px-4 sm:px-6 lg:max-w-7xl lg:px-0">
             <h2 class="2xl:font-bold text-lg mb-8">Products</h2>
 
@@ -18,11 +18,11 @@
                 </div>
             @endif
 
-            <div class="grid grid-cols-1 gap-y-10 sm:grid-cols-2 gap-x-4 lg:grid-cols-4 xl:gap-x-6">
+            <div class="grid grid-cols-1 gap-y-6 sm:grid-cols-2 gap-x-4 lg:grid-cols-4 xl:gap-x-6">
                 @foreach($products as $product)
                     <a href="#" class="group border border-gray-100 rounded shadow p-4">
                         <div class="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-lg overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
-                            <img src="{{ asset('storage/'. $product->image) }}" class="w-full h-64 object-center object-cover group-hover:opacity-75" alt="">
+                            <img src="{{ asset('storage/'. $product->image) }}" class="w-full rounded h-80 object-center object-cover group-hover:opacity-75" alt="">
                         </div>
                         <div class="flex items-center justify-between mt-4">
                             <div class="self-center">

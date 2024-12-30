@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use DateTimeInterface;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Transaction extends Model
 {
@@ -16,7 +17,7 @@ class Transaction extends Model
         'total',
     ];
 
-    protected function serializeDate(DateTimeInterface $date)
+    protected function serializeDate(DateTimeInterface $date): string
     {
         return Carbon::parse($date)->locale('id')->isoFormat('D MMMM Y H:mm:ss');
     }
@@ -26,7 +27,7 @@ class Transaction extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function transaction_detail()
+    public function transaction_detail(): HasMany
     {
         return $this->hasMany(TransactionDetail::class);
     }
